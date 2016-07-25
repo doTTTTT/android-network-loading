@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ntwldg="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/revealView"
+            android:gravity="center"
+            android:text="TEST"
+            android:background="@android:color/darker_gray"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <com.dot.networkloading.NetworkLoading
+            android:id="@+id/network_loading"
+            ntwldg:text="Youtube"
+            ntwldg:image="@drawable/ic_youtube"
+            ntwldg:imageBackground="@drawable/ic_youtube"
+            ntwldg:revealView="@id/revealView"
+            ntwldg:uniqueIdentifier="7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</RelativeLayout>
